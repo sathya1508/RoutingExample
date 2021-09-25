@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'RoutingExample';
+
+
+  receivedData(event)
+  {
+    console.log(event);
+    this.title = event;
+  }
+
 }
+
