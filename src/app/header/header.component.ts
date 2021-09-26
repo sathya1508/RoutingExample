@@ -17,8 +17,8 @@ export class HeaderComponent implements OnInit {
    
   }
 
-  buttonClick(val:any){
-    //console.log("Event logged");
+  buttonClick(val:any,NewHeader){
+    console.log(NewHeader);
     this.sendData.emit(val);
   }
 }

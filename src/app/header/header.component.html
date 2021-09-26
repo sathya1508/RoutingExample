@@ -1,7 +1,8 @@
 
 <h2>Header Component</h2>
+{{NewHeader.value}}
 
 <div>
-  <input id="NewHeader" #NewHeader type="text" value="{{Headername}}"> <br> 
-  <button (click)="buttonClick(NewHeader.value)" > Change Main Header </button>
+  <input id="NewHeader1" ngModel #NewHeader type="text" value="{{Headername}}"> <br> 
+  <button (click)="buttonClick(NewHeader.value,NewHeader)" > Change Main Header </button>
 </div>
